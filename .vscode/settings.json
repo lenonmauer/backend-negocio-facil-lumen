@@ -1,0 +1,30 @@
+{
+  "files.exclude": {
+    "composer.lock": true,
+    "phpunit.xml": true,
+    "artisan": true,
+    ".gitignore": true,
+    "storage": true,
+    "resources": true,
+    "app/Console": true,
+    "app/Events": true,
+    "app/Exceptions": true,
+    "app/Jobs": true,
+    "app/Listeners": true,
+    "app/Providers": true,
+    "app/traits": false,
+    "app/rules": true,
+    "database/factories": false,
+    ".vscode": true,
+    "vendor": true
+  },
+  "prettier.requireConfig": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.php$",
+          "cmd": "prettier ${file} --write"
+      }
+    ]
+  }
+}
